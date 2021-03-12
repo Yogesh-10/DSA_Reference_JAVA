@@ -56,6 +56,7 @@ public class MaxHeap {
         for (var i = 0; i < k - 1; i++)
             heap.remove();
 
+        //return max heap
         return heap.max();
     }
 
