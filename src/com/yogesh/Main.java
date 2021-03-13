@@ -1,15 +1,16 @@
 package com.yogesh;
 
-import com.yogesh.Heaps.MaxHeap;
 import com.yogesh.Tries.Trie;
-
-import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
         var trie = new Trie();
-        trie.insert("cat");
-        trie.insert("can");
-        System.out.println("done");
+        trie.insert("car");
+        trie.insert("card");
+        trie.insert("care");
+        trie.insert("careful");
+        trie.insert("egg");
+        var words = trie.findWords("car");
+        System.out.println(words);
     }
 }
