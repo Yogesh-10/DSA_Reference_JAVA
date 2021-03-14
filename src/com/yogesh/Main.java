@@ -1,18 +1,14 @@
 package com.yogesh;
 
-import com.yogesh.Graphs.Graph;
+import com.yogesh.SortingAlgorithms.BubbleSort;
+
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        var graph = new Graph();
-        graph.addNode("A");
-        graph.addNode("B");
-        graph.addNode("C");
-        graph.addNode("D");
-        graph.addEdge("A", "B");
-        graph.addEdge("B", "D");
-        graph.addEdge("D", "C");
-        graph.addEdge("A", "C");
-        graph.traverseBreadthFirstIterative("B");
+        int[] arr = {  };
+        var sorter = new BubbleSort();
+        sorter.sort(arr);
+        System.out.println(Arrays.toString(arr));
     }
 }
