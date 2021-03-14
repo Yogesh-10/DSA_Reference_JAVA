@@ -1,16 +1,18 @@
 package com.yogesh;
 
-import com.yogesh.Tries.Trie;
+import com.yogesh.Graphs.Graph;
 
 public class Main {
     public static void main(String[] args) {
-        var trie = new Trie();
-        trie.insert("car");
-        trie.insert("card");
-        trie.insert("care");
-        trie.insert("careful");
-        trie.insert("egg");
-        var words = trie.findWords("car");
-        System.out.println(words);
+        var graph = new Graph();
+        graph.addNode("A");
+        graph.addNode("B");
+        graph.addNode("C");
+        graph.addNode("D");
+        graph.addEdge("A", "B");
+        graph.addEdge("B", "D");
+        graph.addEdge("D", "C");
+        graph.addEdge("A", "C");
+        graph.traverseBreadthFirstIterative("B");
     }
 }
