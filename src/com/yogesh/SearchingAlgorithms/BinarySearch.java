@@ -6,7 +6,7 @@ public class BinarySearch {
         return binarySearchRecursive(array, target, 0, array.length - 1);
     }
 
-    private int binarySearchRecursive(int[] array, int target, int left, int right) {
+    protected int binarySearchRecursive(int[] array, int target, int left, int right) {
         //Base condition
         if (right < left)
             return -1;
