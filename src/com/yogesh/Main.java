@@ -1,12 +1,13 @@
 package com.yogesh;
 
 import com.yogesh.SearchingAlgorithms.BinarySearch;
+import com.yogesh.SearchingAlgorithms.TernarySearch;
 
 public class Main {
     public static void main(String[] args) {
-        int[] arr = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
-        var search = new BinarySearch();
-        var index = search.binarySearchIterative(arr, 1);
+        int[] arr = {  };
+        var search = new TernarySearch();
+        var index = search.ternarySearch(arr, 9);
         System.out.println(index);
     }
 }
