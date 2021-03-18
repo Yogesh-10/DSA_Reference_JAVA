@@ -1,12 +1,10 @@
 package com.yogesh;
 
-import com.yogesh.SearchingAlgorithms.ExponentialSearch;
+import com.yogesh.StringManipulation_Algorithms.StringUtils;
 
 public class Main {
     public static void main(String[] args) {
-        int[] arr = {  };
-        var search = new ExponentialSearch();
-        var index = search.exponentialSearch(arr, 60);
-        System.out.println(index);
+        int count = StringUtils.countVowels(null);
+        System.out.println(count);
     }
 }
