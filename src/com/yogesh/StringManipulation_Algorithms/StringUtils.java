@@ -67,8 +67,7 @@ public class StringUtils {
         Set<Character> seen = new HashSet<>();
 
         for (var ch : str.toCharArray()) {
-            if (!seen.contains(ch)){
-                seen.add(ch);
+            if (!seen.add(ch)){
                 output.append(ch);
             }
         }
@@ -93,15 +92,13 @@ public class StringUtils {
                 result = (char) i;
             }
 
-//          Map<Character, Integer> frequencies = new HashMap<>();
+//        Map<Character, Integer> frequencies = new HashMap<Character, Integer>();
 //        for (var ch : str.toCharArray()) {
 //            //If our hash table does'nt have this char, we should add
 //            //with frequency of 1, otherwise we should increase this frequency
-//            if (frequencies.containsKey(ch))
-//                frequencies.replace(ch, frequencies.get(ch) + 1);
-//            else
-//                frequencies.put(ch, 1);
-//    }
+//        
+//            frequencies.put(ch, frequencies.getOrDefault(ch,0)+1);
+//        }
         return result;
     }
 
@@ -159,17 +156,15 @@ public class StringUtils {
         if (word == null)
             return false;
 
-        int left = 0;
-        int right = word.length() - 1;
+        int left = 0, right = word.length() - 1;
 
         while (left < right)
             if (word.charAt(left++) != word.charAt(right--))
                 return false;
 
         return true;
-
-//        var input = new StringBuilder(word);
-//        input.reverse();
-//        return input.toString().equals(word);
+        
+//        Single Line using reverse() present in StringBuilder or StringBuffer class
+//        return new StringBuilder(word).reverse().toString().equals(word);
     }
 }
