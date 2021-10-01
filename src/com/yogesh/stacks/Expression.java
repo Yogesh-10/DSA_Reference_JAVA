@@ -12,13 +12,17 @@ public class Expression {
             if (isLeftBracket(ch))
                 stack.push(ch);
 
-            if (isRightBracket(ch)) {
-                if (stack.empty()) return false;
-                var top = stack.pop();
-                if (bracketsMatch(top, ch)) return false;
+            else {
+                if (stack.isEmpty()) 
+                    return false;
+                
+                char top = stack.pop();
+                
+                if (bracketsMatch(top, ch)) 
+                    return false;
             }
         }
-        return stack.empty();
+        return stack.isEmpty();
     }
 
     private boolean isLeftBracket(char ch){
