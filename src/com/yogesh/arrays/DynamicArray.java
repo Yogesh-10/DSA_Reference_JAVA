@@ -1,10 +1,10 @@
 package com.yogesh.arrays;
 
-public class Array {
+public class DynamicArray {
     private int[] items;
     private int count;
 
-    public Array(int length){
+    public DynamicArray(int length){
         items = new int[length];
     }
 
@@ -20,6 +20,7 @@ public class Array {
 
             //set items to this new array
             items = newItems;
+          
         }
         //Add new item at the end
         items[count++] = item;
@@ -49,6 +50,7 @@ public class Array {
 
     public void print(){
         for(int i = 0; i < count; i++)
-            System.out.println(items[i]);
+            System.out.print(items[i]+" ");
+        System.out.println();
     }
 }
