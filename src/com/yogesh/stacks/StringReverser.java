@@ -12,7 +12,7 @@ public class StringReverser {
             stack.push(ch);
 
         StringBuffer reversed = new StringBuffer();
-        while (!stack.empty())
+        while (!stack.isEmpty())
             reversed.append(stack.pop());
 
         return reversed.toString();
