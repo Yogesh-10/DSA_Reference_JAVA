@@ -14,8 +14,7 @@ public class Stack {
     }
 
     public int pop(){
-        if (count == 0)
-            throw new IllegalStateException();
+        checkUnderflow();
         //return items[--count];
         //or
         count--;
@@ -23,14 +22,19 @@ public class Stack {
     }
 
     public int peek(){
-        if (count == 0)
-            throw new IllegalStateException();
-
+        //check for underflow condition 
+        checkUnderflow();
         return items[count - 1];
     }
-
+    
     public boolean isEmpty(){
         return count == 0;
+    }
+    
+    public void checkUnderflow(){
+        // throws IllegalStateException if there are no elements
+        if (count == 0)
+            throw new IllegalStateException();        
     }
 
     @Override
