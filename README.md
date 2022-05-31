@@ -1,6 +1,6 @@
 ## DSA_Reference_JAVA
 
-This DSA_Reference for java contains Most used and most asked interview topics such as
+This DSA_Reference for java contains Most used DSA and most asked interview topics such as
 
 Arrays,
 Linked List,
@@ -10,4 +10,5 @@ Hashtables,
 Graphs, 
 Heaps,
 Trees,
-Algorithms
+Searching,
+and Sorting Algorithms
