@@ -12,3 +12,5 @@ Heaps,
 Trees,
 Searching,
 and Sorting Algorithms
+
+Repository moved and maintained at [DSA-Interview-Resource](https://github.com/Yogesh-10/dsa-interview-resource)
